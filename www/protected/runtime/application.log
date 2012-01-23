@@ -1,0 +1,1039 @@
+2012/01/23 16:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "aggregated/car/admin".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregated/car/...')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=aggregated/car/admin
+HTTP_REFERER=http://yiimti/
+---
+2012/01/23 16:35:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "aggregation/aggregation/familyCar/admin".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/agg...')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=aggregation/aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/car/admin
+---
+2012/01/23 16:36:19 [error] [exception.CException] exception 'CException' with message 'FamilyCarController cannot find the requested view "admin".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php:879
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#1 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(150): CController->render('admin', Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/car/admin
+---
+2012/01/23 17:31:35 [error] [php] include(FamilyData.php): failed to open stream: No such file or directory (/home/seb/web/yii-mti/yii-1.1.9.r3527/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(154): spl_autoload_call()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): FamilyCarController->runAction()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): FamilyCarController->filterAccessControl()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): FamilyCarController->runActionWithFilters()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): FamilyCarController->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+in /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php (154)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 17:32:18 [error] [exception.CException] exception 'CException' with message 'Property "FamilyCar.car_id" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(144): CComponent->__get('car_id')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('car_id')
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(FamilyCar), 'car_id')
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(FamilyCar), 'car_id', Array)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/widgets/CActiveForm.php(568): CHtml::activeTextField(Object(FamilyCar), 'car_id', Array)
+#5 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/_search.php(10): CActiveForm->textField(Object(FamilyCar), 'car_id')
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#9 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(37): CController->renderPartial('_search', Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#14 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(161): CController->render('admin', Array)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#16 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:33:11 [error] [exception.CException] exception 'CException' with message 'Property "Car.data" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(144): CComponent->__get('data')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(1696): CActiveRecord->__get('data')
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CDataColumn.php(141): CHtml::value(Object(Car), 'data.seats')
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridColumn.php(138): CDataColumn->renderDataCellContent(0, Object(Car))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(517): CGridColumn->renderDataCell(0)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(490): CGridView->renderTableRow(0)
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(400): CGridView->renderTableBody()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#8 [internal function]: CBaseListView->renderSection(Array)
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(174): CBaseListView->run()
+#12 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#16 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#17 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(161): CController->render('admin', Array)
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#28 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#29 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#30 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:36:19 [error] [php] Trying to get property of non-object (/home/seb/web/yii-mti/www/protected/modules/aggregation/models/FamilyCar.php:96)
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): FamilyCarController->renderInternal()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): FamilyCarController->renderFile()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): FamilyCarController->renderPartial()
+#3 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(161): FamilyCarController->render()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): FamilyCarController->runAction()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): FamilyCarController->filterAccessControl()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): FamilyCarController->runActionWithFilters()
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): FamilyCarController->run()
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/seb/web/yii-mti/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+in /home/seb/web/yii-mti/www/protected/modules/aggregation/models/FamilyCar.php (96)
+in /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php (35)
+in /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php (161)
+2012/01/23 17:37:39 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "data" is not defined in active record class "Car".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php:215
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'data')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1539): CActiveFinder->__construct(Object(Car), Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(105): CDataProvider->getData()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(269): CBaseListView->init()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(148): CGridView->init()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#11 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(46): CBaseController->widget('zii.widgets.gri...', Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(162): CController->render('admin', Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#27 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#28 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:39:15 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "data" is not defined in active record class "Car".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php:215
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'data')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1539): CActiveFinder->__construct(Object(Car), Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(105): CDataProvider->getData()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(269): CBaseListView->init()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(148): CGridView->init()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#11 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(46): CBaseController->widget('zii.widgets.gri...', Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(162): CController->render('admin', Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#27 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#28 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:39:53 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "data" is not defined in active record class "Car".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php:215
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'data')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1539): CActiveFinder->__construct(Object(Car), Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(105): CDataProvider->getData()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(269): CBaseListView->init()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(148): CGridView->init()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#11 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(46): CBaseController->widget('zii.widgets.gri...', Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(162): CController->render('admin', Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#27 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#28 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:39:58 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "data" is not defined in active record class "Car".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php:215
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'data')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1539): CActiveFinder->__construct(Object(Car), Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(105): CDataProvider->getData()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(269): CBaseListView->init()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(148): CGridView->init()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#11 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(46): CBaseController->widget('zii.widgets.gri...', Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(162): CController->render('admin', Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#27 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#28 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:47:29 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "data" is not defined in active record class "Car".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php:215
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'data')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1539): CActiveFinder->__construct(Object(Car), Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(105): CDataProvider->getData()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(269): CBaseListView->init()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(148): CGridView->init()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#11 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(46): CBaseController->widget('zii.widgets.gri...', Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(162): CController->render('admin', Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#27 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#28 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:47:34 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "data" is not defined in active record class "Car".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php:215
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'data')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1539): CActiveFinder->__construct(Object(Car), Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/CBaseListView.php(105): CDataProvider->getData()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/zii/widgets/grid/CGridView.php(269): CBaseListView->init()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(148): CGridView->init()
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#11 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/admin.php(46): CBaseController->widget('zii.widgets.gri...', Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(162): CController->render('admin', Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionAdmin()
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#27 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#28 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:50:22 [error] [exception.CException] exception 'CException' with message 'Property "FamilyCar.seats" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(144): CComponent->__get('seats')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('seats')
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(FamilyCar), 'seats')
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(FamilyCar), 'seats', Array)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/widgets/CActiveForm.php(568): CHtml::activeTextField(Object(FamilyCar), 'seats', Array)
+#5 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/_form.php(14): CActiveForm->textField(Object(FamilyCar), 'seats')
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#9 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/create.php(15): CController->renderPartial('_form', Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(88): CController->render('create', Array)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#16 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/admin
+---
+2012/01/23 17:55:58 [error] [exception.CException] exception 'CException' with message 'Property "FamilyCarData.id" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(144): CComponent->__get('id')
+#1 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/familyCar/view.php(4): CActiveRecord->__get('id')
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(59): CController->render('view', Array)
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/view&id=2
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/create
+---
+2012/01/23 17:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php:176
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/view&id=2
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/create
+---
+2012/01/23 17:57:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php:176
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/fam...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=aggregation/familyCar/view&id=3
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/create
+---
+2012/01/23 18:00:21 [error] [exception.CException] exception 'CException' with message 'Property "SportCar.car_id" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(144): CComponent->__get('car_id')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('car_id')
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(SportCar), 'car_id')
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(SportCar), 'car_id', Array)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/widgets/CActiveForm.php(568): CHtml::activeTextField(Object(SportCar), 'car_id', Array)
+#5 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/sportCar/_search.php(10): CActiveForm->textField(Object(SportCar), 'car_id')
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#9 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/sportCar/admin.php(37): CController->renderPartial('_search', Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#14 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/SportCarController.php(162): CController->render('admin', Array)
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): SportCarController->actionAdmin()
+#16 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#23 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('admin')
+#25 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/spo...')
+#26 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php?r=aggregation/sportCar/admin
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/familyCar/index
+---
+2012/01/23 18:08:19 [error] [exception.CException] exception 'CException' with message 'Property "SportCarData.id" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(144): CComponent->__get('id')
+#1 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/sportCar/view.php(4): CActiveRecord->__get('id')
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/SportCarController.php(59): CController->render('view', Array)
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): SportCarController->actionView()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/spo...')
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=aggregation/sportCar/view&id=5
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/sportCar/create
+---
+2012/01/23 18:09:07 [error] [exception.CException] exception 'CException' with message 'Property "SportCar.car_id" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(144): CComponent->__get('car_id')
+#1 /home/seb/web/yii-mti/www/protected/modules/aggregation/views/sportCar/view.php(10): CActiveRecord->__get('car_id')
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(127): require('/home/seb/web/y...')
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/seb/web/y...', Array, true)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(870): CBaseController->renderFile('/home/seb/web/y...', Array, true)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /home/seb/web/yii-mti/www/protected/modules/aggregation/controllers/SportCarController.php(59): CController->render('view', Array)
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): SportCarController->actionView()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#17 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('aggregation/spo...')
+#18 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=aggregation/sportCar/view&id=5
+HTTP_REFERER=http://yiimti/index.php?r=aggregation/sportCar/create
+---
+2012/01/23 18:17:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1471 The target table view_family_car of the INSERT is not insertable-into. The SQL statement executed was: INSERT INTO `view_family_car` (`type`, `name`, `seats`) VALUES (:yp0, :yp1, :yp2).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (77)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 18:17:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1471 The target table view_family_car of the INSERT is not insertable-into. The SQL statement executed was: INSERT INTO `view_family_car` (`type`, `name`, `seats`) VALUES (:yp0, :yp1, :yp2)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(77): CActiveRecord->save()
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 18:22:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1471 The target table view_family_car of the INSERT is not insertable-into. The SQL statement executed was: INSERT INTO `view_family_car` (`type`, `name`, `seats`) VALUES (:yp0, :yp1, :yp2).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (77)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 18:22:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1471 The target table view_family_car of the INSERT is not insertable-into. The SQL statement executed was: INSERT INTO `view_family_car` (`type`, `name`, `seats`) VALUES (:yp0, :yp1, :yp2)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(77): CActiveRecord->save()
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 18:33:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1393 Can not modify more than one base table through a join view 'yiimti.view_family_car'. The SQL statement executed was: INSERT INTO `view_family_car` (`type`, `name`, `seats`) VALUES (:yp0, :yp1, :yp2).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (77)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 18:33:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1393 Can not modify more than one base table through a join view 'yiimti.view_family_car'. The SQL statement executed was: INSERT INTO `view_family_car` (`type`, `name`, `seats`) VALUES (:yp0, :yp1, :yp2)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(77): CActiveRecord->save()
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 18:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php:165
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=view/familyCar/view&id=
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 18:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php:165
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=view/familyCar/view&id=
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 18:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php:165
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=view/familyCar/view&id=
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 18:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php:165
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=view/familyCar/view&id=
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 19:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php:165
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=view/familyCar/view&id=
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 20:23:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php:165
+Stack trace:
+#0 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(58): FamilyCarController->loadModel()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionView()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=view/familyCar/view&id=
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 20:31:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yiimti`.`sport_car_data`, CONSTRAINT `fk_sport_car_data_car` FOREIGN KEY (`car_id`) REFERENCES `car` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `sport_car_data` (`car_id`) VALUES (:yp0).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (80)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 20:31:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yiimti`.`sport_car_data`, CONSTRAINT `fk_sport_car_data_car` FOREIGN KEY (`car_id`) REFERENCES `car` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `sport_car_data` (`car_id`) VALUES (:yp0)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(80): CActiveRecord->save(false)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 20:32:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yiimti`.`family_car_data`, CONSTRAINT `fk_table2_car1` FOREIGN KEY (`car_id`) REFERENCES `car` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (:yp0).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (80)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 20:32:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yiimti`.`family_car_data`, CONSTRAINT `fk_table2_car1` FOREIGN KEY (`car_id`) REFERENCES `car` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (:yp0)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(80): CActiveRecord->save(false)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 20:33:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'car_id' cannot be null. The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (NULL).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (80)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 20:33:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'car_id' cannot be null. The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (NULL)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(80): CActiveRecord->save(false)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 20:33:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'car_id' cannot be null. The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (NULL).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (81)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 20:33:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'car_id' cannot be null. The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (NULL)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(81): CActiveRecord->save(false)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 20:38:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'car_id' cannot be null. The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (NULL).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (81)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 20:38:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'car_id' cannot be null. The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (NULL)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(81): CActiveRecord->save(false)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 20:50:56 [error] [exception.CException] exception 'CException' with message 'Property "CDbCommand._text" is not defined.' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:174
+Stack trace:
+#0 xdebug eval(1): CComponent->__set('_text', 'INSERT INTO `vi...')
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CActiveRecord::insert()
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#3 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(77): CActiveRecord->save()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 21:08:47 [error] [exception.CException] exception 'CException' with message 'FamilyCarController and its behaviors do not have a method or closure named "getMetaData".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:266
+Stack trace:
+#0 xdebug eval(1): CComponent->__call('getMetaData', Array)
+#1 xdebug eval(1): FamilyCarController->getMetaData()
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(76): FamilyCarController::actionCreate()
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 21:08:58 [error] [exception.CException] exception 'CException' with message 'FamilyCarController and its behaviors do not have a method or closure named "getMetaData".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CComponent.php:266
+Stack trace:
+#0 xdebug eval(1): CComponent->__call('getMetaData', Array)
+#1 xdebug eval(1): FamilyCarController->getMetaData()
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(76): FamilyCarController::actionCreate()
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 21:17:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yiimti`.`family_car_data`, CONSTRAINT `fk_table2_car1` FOREIGN KEY (`car_id`) REFERENCES `car` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (:yp0).
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (80)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 21:17:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yiimti`.`family_car_data`, CONSTRAINT `fk_table2_car1` FOREIGN KEY (`car_id`) REFERENCES `car` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `family_car_data` (`car_id`) VALUES (:yp0)' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(80): CActiveRecord->save(false)
+#3 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionCreate()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=view/familyCar/create
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/create
+---
+2012/01/23 21:20:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1393 Can not modify more than one base table through a join view 'yiimti.view_family_car'. The SQL statement executed was: UPDATE `view_family_car` SET `id`=:yp0, `name`=:yp1, `type`=:yp2, `seats`=:yp3 WHERE `view_family_car`.`id`=42.
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (105)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 21:20:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1393 Can not modify more than one base table through a join view 'yiimti.view_family_car'. The SQL statement executed was: UPDATE `view_family_car` SET `id`=:yp0, `name`=:yp1, `type`=:yp2, `seats`=:yp3 WHERE `view_family_car`.`id`=42' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1681): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1061): CActiveRecord->updateByPk('42', Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#3 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(105): CActiveRecord->save()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionUpdate()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('update')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=view/familyCar/update&id=42
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/update&id=42
+---
+2012/01/23 21:38:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1393 Can not modify more than one base table through a join view 'yiimti.view_family_car'. The SQL statement executed was: UPDATE `view_family_car` SET `id`=:yp0, `name`=:yp1, `type`=:yp2, `seats`=:yp3 WHERE `view_family_car`.`id`=42.
+in /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php (105)
+in /home/seb/web/yii-mti/www/index.php (13)
+2012/01/23 21:38:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1393 Can not modify more than one base table through a join view 'yiimti.view_family_car'. The SQL statement executed was: UPDATE `view_family_car` SET `id`=:yp0, `name`=:yp1, `type`=:yp2, `seats`=:yp3 WHERE `view_family_car`.`id`=42' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1681): CDbCommand->execute()
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1061): CActiveRecord->updateByPk('42', Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#3 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(105): CActiveRecord->save()
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionUpdate()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('update')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=view/familyCar/update&id=42
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/update&id=42
+---
+2012/01/23 21:39:55 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "view_family_car".' in /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/schema/CDbCommandBuilder.php:269
+Stack trace:
+#0 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1680): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Array, Object(CDbCriteria))
+#1 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(1061): CActiveRecord->updateByPk('42', Array)
+#2 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/db/ar/CActiveRecord.php(787): CActiveRecord->update(Array)
+#3 /home/seb/web/yii-mti/www/protected/modules/view/controllers/FamilyCarController.php(105): CActiveRecord->save(true, Array)
+#4 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/actions/CInlineAction.php(50): FamilyCarController->actionUpdate()
+#5 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(276): CController->run('update')
+#14 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/web/CWebApplication.php(135): CWebApplication->runController('view/familyCar/...')
+#15 /home/seb/web/yii-mti/yii-1.1.9.r3527/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/seb/web/yii-mti/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=view/familyCar/update&id=42
+HTTP_REFERER=http://yiimti/index.php?r=view/familyCar/update&id=42
+---

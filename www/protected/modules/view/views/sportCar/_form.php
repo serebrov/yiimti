@@ -9,23 +9,21 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
+    <?php if (!$model->isNewRecord): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
+    <?php endif; ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'type'); ?>
-		<?php echo $form->textField($model,'type',array('size'=>9,'maxlength'=>9)); ?>
-		<?php echo $form->error($model,'type'); ?>
-	</div>
-
+    <?php if (!$model->isNewRecord): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'power'); ?>
 		<?php echo $form->textField($model,'power'); ?>
 		<?php echo $form->error($model,'power'); ?>
 	</div>
+    <?php endif; ?>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

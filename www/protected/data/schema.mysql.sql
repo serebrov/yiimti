@@ -63,8 +63,8 @@ DROP TABLE IF EXISTS `yiimti`.`view_sport_car`;
 USE `yiimti`;
 CREATE  OR REPLACE VIEW `yiimti`.`view_sport_car` AS
 select c.id, c.name, c.type, sc.power from car c
-left join sport_car_data sc on sc.car_id = c.id
-where c.type='sport_car'
+join sport_car_data sc on sc.car_id = c.id
+where c.type='SportCar'
 ;
 
 -- -----------------------------------------------------
@@ -74,8 +74,8 @@ DROP TABLE IF EXISTS `yiimti`.`view_family_car`;
 USE `yiimti`;
 CREATE  OR REPLACE VIEW `yiimti`.`view_family_car` AS
 select c.id, c.name, c.type, fc.seats from car c
-left join family_car_data fc on fc.car_id = c.id
-where c.type='family_car';
+join family_car_data fc on fc.car_id = c.id
+where c.type='FamilyCar';
 
 
 SET SQL_MODE=@OLD_SQL_MODE;

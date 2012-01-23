@@ -9,7 +9,7 @@
  * @property string $type
  * @property integer $power
  */
-class SportCar extends CActiveRecord
+class SportCar extends Car
 {
 	/**
 	 * Returns the static model of the specified AR class.
@@ -59,6 +59,14 @@ class SportCar extends CActiveRecord
 		return array(
 		);
 	}
+
+    /*public function afterCreate() {
+        if ($this->isNewRecord) {
+            $data = new SportCarData;
+            $data->car_id = $this->id;
+            $data->save(false);
+        }
+    } */
 
 	/**
 	 * @return array customized attribute labels (name=>label)

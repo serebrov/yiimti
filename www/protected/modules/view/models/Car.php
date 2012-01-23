@@ -27,6 +27,36 @@ class Car extends CActiveRecord
 		return 'car';
 	}
 
+   /**
+     * We're overriding this method to fill findAll() and similar method result
+     * with proper models.
+     *
+     * @param array $attributes
+     * @return Car
+     */
+    protected function instantiate($attributes){
+        switch($attributes['type']){
+            case 'sport':
+                $class='SportCar';
+            break;
+            case 'family':
+                $class='FamilyCar';
+            break;
+            default:
+                $class=get_class($this);
+        }
+        $model=new $class(null);
+        return $model;
+    }
+
+    public function beforeSave() {
+        if ($this->isNewRecord) {
+            $this->type = get_class($this);
+        }
+        return parent::beforeSave();
+    }
+
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */

@@ -19,6 +19,35 @@ class Car extends CActiveRecord
 		return parent::model($className);
 	}
 
+   /**
+     * We're overriding this method to fill findAll() and similar method result
+     * with proper models.
+     *
+     * @param array $attributes
+     * @return Car
+     */
+    protected function instantiate($attributes){
+        switch($attributes['type']){
+            case 'sport':
+                $class='SportCar';
+            break;
+            case 'family':
+                $class='FamilyCar';
+            break;
+            default:
+                $class=get_class($this);
+        }
+        $model=new $class(null);
+        return $model;
+    }
+
+    public function beforeSave() {
+        if ($this->isNewRecord) {
+            $this->type = get_class($this);
+        }
+        return parent::beforeSave();
+    }
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -51,8 +80,6 @@ class Car extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'family_car_data' => array(self::HAS_ONE, 'FamilyCarData', 'car_id'),
-			'sport_car_data' => array(self::HAS_ONE, 'SportCarData', 'car_id'),
 		);
 	}
 

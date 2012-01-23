@@ -29,10 +29,16 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				array('label'=>'Aggregation/Car', 'url'=>array('/aggregation/car/admin')),
+				array('label'=>'Aggregation/FamilyCar', 'url'=>array('/aggregation/familyCar/admin')),
+				array('label'=>'Aggregation/SportCar', 'url'=>array('/aggregation/sportCar/admin')),
+				array('label'=>'View/Car', 'url'=>array('/view/car/admin')),
+				array('label'=>'View/FamilyCar', 'url'=>array('/view/familyCar/admin')),
+				array('label'=>'View/SportCar', 'url'=>array('/view/sportCar/admin')),
+				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+				//array('label'=>'Contact', 'url'=>array('/site/contact')),
+				//array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				//array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
 	</div><!-- mainmenu -->

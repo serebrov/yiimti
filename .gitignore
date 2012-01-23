@@ -1,0 +1,14 @@
+#ignore netbeans project
+nbproject
+
+#ignore system folders content
+application/assets/*
+application/files/*
+application/protected/runtime/*
+#*.orig files created by kdiff3 after merge
+*.orig
+#*.bak files
+*.bak
+.DS_Store
+# exclude .gitignore files
+!.gitignore

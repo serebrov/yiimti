@@ -2,9 +2,9 @@
 nbproject
 
 #ignore system folders content
-application/assets/*
-application/files/*
-application/protected/runtime/*
+www/assets/*
+www/files/*
+www/protected/runtime/*
 #*.orig files created by kdiff3 after merge
 *.orig
 #*.bak files

@@ -71,6 +71,8 @@ class Car extends CActiveRecord
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
+            'familyData' => array(self::HAS_ONE, 'FamilyCarData', 'car_id'),
+            'sportData' => array(self::HAS_ONE, 'SportCarData', 'car_id'),
         );
     }
 
@@ -102,6 +104,9 @@ class Car extends CActiveRecord
         $criteria->compare('name',$this->name,true);
 
         $criteria->compare('type',$this->type,true);
+
+        $criteria->with = array('familyData', 'sportData');
+        $criteria->together = true;
 
         return new CActiveDataProvider('Car', array(
             'criteria'=>$criteria,

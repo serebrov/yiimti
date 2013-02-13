@@ -26,7 +26,7 @@ CREATE  TABLE IF NOT EXISTS `yiimti`.`sport_car_data` (
   CONSTRAINT `fk_sport_car_data_car`
     FOREIGN KEY (`car_id` )
     REFERENCES `yiimti`.`car` (`id` )
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -41,7 +41,7 @@ CREATE  TABLE IF NOT EXISTS `yiimti`.`family_car_data` (
   CONSTRAINT `fk_table2_car1`
     FOREIGN KEY (`car_id` )
     REFERENCES `yiimti`.`car` (`id` )
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 

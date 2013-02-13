@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'List FamilyCar', 'url'=>array('index')),
 	array('label'=>'Create FamilyCar', 'url'=>array('create')),
-	array('label'=>'View FamilyCar', 'url'=>array('view', 'id'=>$model->car_id)),
+	array('label'=>'View FamilyCar', 'url'=>array('view', 'id'=>$model->id)),
 	array('label'=>'Manage FamilyCar', 'url'=>array('admin')),
 );
 ?>
